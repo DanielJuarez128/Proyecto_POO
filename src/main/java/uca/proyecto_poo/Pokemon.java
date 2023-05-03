@@ -27,6 +27,7 @@ public class Pokemon extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblTitulo = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         lblEevee = new javax.swing.JLabel();
         btnEevee = new javax.swing.JButton();
@@ -51,6 +52,10 @@ public class Pokemon extends javax.swing.JFrame {
         lblLeafeon = new javax.swing.JLabel();
         btnLeafeon = new javax.swing.JButton();
         lblPlanta = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        lblGlaceon = new javax.swing.JLabel();
+        btnGlaceon = new javax.swing.JButton();
+        lblHielo = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         lblUmbreon = new javax.swing.JLabel();
         btnUmbreon = new javax.swing.JButton();
@@ -59,14 +64,12 @@ public class Pokemon extends javax.swing.JFrame {
         lblSylveon = new javax.swing.JLabel();
         btnSylveon = new javax.swing.JButton();
         lblHada = new javax.swing.JLabel();
-        lblTitulo = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
-        lblGlaceon = new javax.swing.JLabel();
-        btnGlaceon = new javax.swing.JButton();
-        lblHielo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+
+        lblTitulo.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        lblTitulo.setText("Eevee y sus evoluciones:");
 
         lblEevee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uca/proyecto_poo/resources/Eevee.png"))); // NOI18N
 
@@ -295,6 +298,44 @@ public class Pokemon extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        lblGlaceon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uca/proyecto_poo/resources/Glaceon.png"))); // NOI18N
+
+        btnGlaceon.setText("Glaceon");
+        btnGlaceon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGlaceonActionPerformed(evt);
+            }
+        });
+
+        lblHielo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblHielo.setText("Tipo Hielo");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblHielo)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(lblGlaceon)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnGlaceon)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblHielo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblGlaceon)
+                    .addComponent(btnGlaceon))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         lblUmbreon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uca/proyecto_poo/resources/Umbreon.png"))); // NOI18N
 
         btnUmbreon.setText("Umbreon");
@@ -369,47 +410,6 @@ public class Pokemon extends javax.swing.JFrame {
                     .addComponent(lblSylveon)
                     .addComponent(btnSylveon))
                 .addGap(36, 36, 36))
-        );
-
-        lblTitulo.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        lblTitulo.setText("Eevee y sus evoluciones:");
-
-        lblGlaceon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uca/proyecto_poo/resources/Glaceon.png"))); // NOI18N
-
-        btnGlaceon.setText("Glaceon");
-        btnGlaceon.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGlaceonActionPerformed(evt);
-            }
-        });
-
-        lblHielo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblHielo.setText("Tipo Hielo");
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblHielo)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(lblGlaceon)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnGlaceon)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblHielo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblGlaceon)
-                    .addComponent(btnGlaceon))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
