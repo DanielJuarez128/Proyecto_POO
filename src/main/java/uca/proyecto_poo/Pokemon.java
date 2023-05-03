@@ -4,7 +4,6 @@
  */
 package uca.proyecto_poo;
 
-import java.applet.AudioClip;
 
 /**
  *
@@ -67,6 +66,7 @@ public class Pokemon extends javax.swing.JFrame {
         lblHielo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         lblEevee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uca/proyecto_poo/resources/Eevee.png"))); // NOI18N
 
@@ -473,48 +473,57 @@ public class Pokemon extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEeveeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEeveeActionPerformed
-        AudioClip audioEevee = java.applet.Applet.newAudioClip(getClass().getResource("Grito_de_Eevee.wav"));
-        audioEevee.play();
+        String audioFilePath = "src/main/java/uca/proyecto_poo/resources/Grito_de_Eevee.wav";
+        EjemploClip sonidoEevee = new EjemploClip();
+        sonidoEevee.play(audioFilePath);
     }//GEN-LAST:event_btnEeveeActionPerformed
 
     private void btnSylveonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSylveonActionPerformed
-        AudioClip audioSylveon = java.applet.Applet.newAudioClip(getClass().getResource("Grito_de_Sylveon.wav"));
-        audioSylveon.play();
+        String audioFilePath = "src/main/java/uca/proyecto_poo/resources/Grito_de_Sylveon.wav";
+        EjemploClip sonidoSylveon = new EjemploClip();
+        sonidoSylveon.play(audioFilePath);
     }//GEN-LAST:event_btnSylveonActionPerformed
 
     private void btnFlareonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFlareonActionPerformed
-        AudioClip audioFlareon = java.applet.Applet.newAudioClip(getClass().getResource("Grito_de_Flareon.wav"));
-        audioFlareon.play();
+        String audioFilePath = "src/main/java/uca/proyecto_poo/resources/Grito_de_Flareon.wav";
+        EjemploClip sonidoFlareon = new EjemploClip();
+        sonidoFlareon.play(audioFilePath);
     }//GEN-LAST:event_btnFlareonActionPerformed
 
     private void btnLeafeonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLeafeonActionPerformed
-        AudioClip audioLeafeon = java.applet.Applet.newAudioClip(getClass().getResource("Grito_de_Leafeon.wav"));
-        audioLeafeon.play();
+        String audioFilePath = "src/main/java/uca/proyecto_poo/resources/Grito_de_Leafeon.wav";
+        EjemploClip sonidoLeafeon = new EjemploClip();
+        sonidoLeafeon.play(audioFilePath);
     }//GEN-LAST:event_btnLeafeonActionPerformed
 
     private void btnJolteonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJolteonActionPerformed
-        AudioClip audioJolteon = java.applet.Applet.newAudioClip(getClass().getResource("Grito_de_Jolteon.wav"));
-        audioJolteon.play();
+        String audioFilePath = "src/main/java/uca/proyecto_poo/resources/Grito_de_Jolteon.wav";
+        EjemploClip sonidoJolteon = new EjemploClip();
+        sonidoJolteon.play(audioFilePath);
     }//GEN-LAST:event_btnJolteonActionPerformed
 
     private void btnEspeonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEspeonActionPerformed
-        AudioClip audioEspeon = java.applet.Applet.newAudioClip(getClass().getResource("Grito_de_Jolteon.wav"));
-        audioEspeon.play();
+        String audioFilePath = "src/main/java/uca/proyecto_poo/resources/Grito_de_Espeon.wav";
+        EjemploClip sonidoEspeon = new EjemploClip();
+        sonidoEspeon.play(audioFilePath);
     }//GEN-LAST:event_btnEspeonActionPerformed
 
     private void btnVaporeonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVaporeonActionPerformed
-        AudioClip audioVaporeon = java.applet.Applet.newAudioClip(getClass().getResource("Grito_de_Jolteon.wav"));
-        audioVaporeon.play();
+        String audioFilePath = "src/main/java/uca/proyecto_poo/resources/Grito_de_Vaporeon.wav";
+        EjemploClip sonidoVaporeon = new EjemploClip();
+        sonidoVaporeon.play(audioFilePath);
     }//GEN-LAST:event_btnVaporeonActionPerformed
 
     private void btnGlaceonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGlaceonActionPerformed
-        AudioClip audioGlaceon = java.applet.Applet.newAudioClip(getClass().getResource("Grito_de_Jolteon.wav"));
-        audioGlaceon.play();
+        String audioFilePath = "src/main/java/uca/proyecto_poo/resources/Grito_de_Glaceon.wav";
+        EjemploClip sonidoGlaceon = new EjemploClip();
+        sonidoGlaceon.play(audioFilePath);
     }//GEN-LAST:event_btnGlaceonActionPerformed
 
     private void btnUmbreonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUmbreonActionPerformed
-        AudioClip audioUmbreon = java.applet.Applet.newAudioClip(getClass().getResource("Grito_de_Jolteon.wav"));
-        audioUmbreon.play();
+        String audioFilePath = "src/main/java/uca/proyecto_poo/resources/Grito_de_Umbreon.wav";
+        EjemploClip sonidoUmbreon = new EjemploClip();
+        sonidoUmbreon.play(audioFilePath);
     }//GEN-LAST:event_btnUmbreonActionPerformed
 
     /**
